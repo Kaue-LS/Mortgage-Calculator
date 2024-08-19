@@ -1,0 +1,16 @@
+@import "./variables.css";
+@import "./reset.css";
+
+body {
+  background-color: var(--blue-bg);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 200px;
+}
+.paymentBox {
+  background-color: var(--white-bg);
+  border-radius: 20px;
+}
+.paymentBox .content {
+  display: flex;
+  padding: 50px 40px;
+}
