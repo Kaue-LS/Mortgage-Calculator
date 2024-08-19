@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,51 +29,54 @@
     <title>Mortgage Calculator</title>
 </head>
 
-<body>
-    <main class="paymentBox">
-        <div class="content">
-            <form>
-                <div class="headerForm">
+<body class="p-6">
+    <main class="paymentBox rounded m-auto h-100 mh-100 ">
+        <div class=" mw-100 mh-100 d-flex content">
+            <form class="p-5">
+                <div class="headerForm pb-5 d-flex justify-content-between">
                     <h3>Mortgage Calculator</h3> <input type="button" value="clear all" id="clearButton"
                         class="clearButton" />
                 </div>
-                <div class="formAmount">
-                    <label for="amount">Mortgage Amount</label>
-                    <label>
+                <div class="formAmount mb-4 d-flex flex-column p-0">
+                    <label class="mb-3" for="amount">Mortgage Amount</label>
+                    <label class="p-0">
                         <span>R$</span>
                         <input type="text" id="amount" name="amount" placeholder=""
                             title="This input must contain the amount of the mortgage">
                     </label>
 
                 </div>
-                <div class="formTermRate">
+                <div class="formTermRate d-inline-flex  mb-4">
                     <div class="formTerm">
-                        <label for="term">Mortgage Term</label>
-                        <div class="termInput">
+                        <label class="mb-3" for="term">Mortgage Term</label>
+                        <label class="termInput  d-inline-flex">
                             <input type="text" id="term" name="term" placeholder=""
                                 title="This input must contain the term of the mortgage">
-                            <span>years</span>
-                        </div>
+                            years
+                        </label>
                     </div>
                     <div class="formRate">
-                        <label for="rate">Interest Rate</label>
-                        <div class="rateInput">
+                        <label class="mb-3" for="rate">Interest Rate</label>
+                        <label class="rateInput  d-inline-flex">
                             <input type="text" id="rate" name="rate" placeholder=""
                                 title="This input must contain the rate of the mortgage">
                             <span>%</span>
-                        </div>
+                        </label>
                     </div>
                 </div>
-                <div class="formType">
-                    <label>
+                <div class="formType d-flex flex-column mb-4">
+                    <label class="">
                         <input type="radio" value="repayment" name="type">
                         Repayment
                     </label>
-                    <label>
+                    <label class="">
                         <input type="radio" value="interest" name="type">
                         Interest Only
                     </label>
                 </div>
+                <label for="">
+                    <img src="./assets/images/icon-calculator.svg" alt="calculator" />
+                </label>
                 <input type="submit" value="Calculate Repayment">
             </form>
             <div>
