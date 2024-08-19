@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="paymentBox">
+        <div class="content">
+            <form>
+                <div class="headerForm">
+                    <h3>Mortgage Calculator</h3> <input type="button" value="clear all" id="clearButton"
+                        class="clearButton" />
+                </div>
+                <div class="formAmount">
+                    <label for="amount">Mortgage Amount</label>
+                    <input type="text" id="amount" name="amount" placeholder=""
+                        title="This input must contain the amount of the mortgage">
+                </div>
+                <div class="formTermRate">
+                    <div class="formTerm">
+                        <label for="term">Mortgage Term</label>
+                        <div class="termInput">
+                            <input type="text" id="term" name="term" placeholder=""
+                                title="This input must contain the term of the mortgage">
+                            <span>years</span>
+                        </div>
+                    </div>
+                    <div class="formRate">
+                        <label for="rate">Interest Rate</label>
+                        <div class="rateInput">
+                            <input type="text" id="rate" name="rate" placeholder=""
+                                title="This input must contain the rate of the mortgage">
+                            <span>%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="formType">
+                    <label>
+                        <input type="radio" value="repayment" name="type">
+                        Repayment
+                    </label>
+                    <label>
+                        <input type="radio" value="interest" name="type">
+                        Interest Only
+                    </label>
+                </div>
+                <input type="submit" value="Calculate Repayment">
+            </form>
+            <div>
+                <div class="noResults">
+                    <img src="" alt="calculator">
+                    <h3>Results shown here</h3>
+                    <p>Complete the form and click "calculate reapyments" to see what your monthly repayments would be.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
