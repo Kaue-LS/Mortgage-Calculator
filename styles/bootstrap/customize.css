@@ -1,3 +1,30 @@
 .p-6 {
   padding: 200px !important;
 }
+.p-custom-1 {
+  padding: 15px 15px;
+}
+.px-custom-1 {
+  padding-inline: 14px;
+}
+.fs-7 {
+  font-size: 18px;
+}
+.fs-8 {
+  font-size: 16px;
+}
+.fs-9 {
+  font-size: 14px;
+}
+.bg-green {
+  background-color: var(--green-bg);
+}
+.border-green {
+  border: 1px solid var(--green-bg);
+}
+.text-blue {
+  color: var(--blue-font);
+}
+.text-gray {
+  color: var(--gray-font);
+}
